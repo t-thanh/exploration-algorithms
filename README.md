@@ -143,7 +143,8 @@
   ./aep.sh lidar #with lidar sensor
   ./aep.sh rgbd #with rgbd sensor
   rosservice call /mavros/cmd/arming "value: true"
-  rosservice call /mavros/set_mode "base_mode: 0 custom_mode: 'OFFBOARD'"
+  rosservice call /mavros/set_mode "base_mode: 0 
+    custom_mode: 'OFFBOARD'" # must add linebreak between base_mode and custom_mode
 
   # FUEL
   ./fuel.sh
